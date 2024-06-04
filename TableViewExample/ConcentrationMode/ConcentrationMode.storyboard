@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xUY-mo-UGq">
-    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
@@ -29,10 +29,10 @@
                                     <nil key="highlightedColor"/>
                                 </label>
                             </subviews>
-                            <color key="backgroundColor" systemColor="labelColor"/>
+                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         </view>
                         <sections>
-                            <tableViewSection headerTitle="모드 설정" footerTitle="집중 모드에서는 경고 및 알람 소리가 울리지 않습니다." id="mbK-Yo-fJg">
+                            <tableViewSection headerTitle="모드 설정" footerTitle="집중 모드에서는 경고 및 알람 소리가 울리지 않습니다." id="mbK-Yo-fJg" colorLabel="IBBuiltInLabel-Gray">
                                 <cells>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="IMH-Dc-0Pv" detailTextLabel="xTC-7O-gB2" imageView="rSS-1Q-4aa" style="IBUITableViewCellStyleValue1" id="Gq2-UB-D8A">
                                         <rect key="frame" x="20" y="99.333332061767578" width="353" height="43.666667938232422"/>
@@ -62,7 +62,7 @@
                                             </subviews>
                                             <color key="tintColor" systemColor="systemPurpleColor"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="1aN-Qc-9mH" imageView="ISK-mp-cnn" style="IBUITableViewCellStyleDefault" id="NsX-a2-TYn">
                                         <rect key="frame" x="20" y="143" width="353" height="43.666667938232422"/>
@@ -85,7 +85,7 @@
                                             </subviews>
                                             <color key="tintColor" systemColor="systemOrangeColor"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="none" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="KmO-wZ-hvZ" detailTextLabel="25O-b7-IjJ" imageView="3rk-8s-QyO" style="IBUITableViewCellStyleSubtitle" id="pQi-Fa-ng5">
                                         <rect key="frame" x="20" y="186.66666793823242" width="353" height="43.666667938232422"/>
@@ -116,7 +116,7 @@
                                             </subviews>
                                             <color key="tintColor" systemColor="systemGreenColor"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" textLabel="duX-Q6-hUf" detailTextLabel="9qS-9a-krW" imageView="Efk-ab-Eqf" style="IBUITableViewCellStyleValue1" id="qKr-uz-ibz">
                                         <rect key="frame" x="20" y="230.33333587646484" width="353" height="43.666667938232422"/>
@@ -146,7 +146,7 @@
                                             </subviews>
                                             <color key="tintColor" systemColor="tableCellBlueTextColor"/>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemBackgroundColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -172,7 +172,7 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
-                                        <color key="backgroundColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor"/>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -193,8 +193,11 @@
         <image name="clipboard.fill" catalog="system" width="98" height="128"/>
         <image name="moon.fill" catalog="system" width="128" height="123"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
-        <systemColor name="labelColor">
-            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        <systemColor name="secondarySystemBackgroundColor">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondarySystemGroupedBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemGreenColor">
             <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
